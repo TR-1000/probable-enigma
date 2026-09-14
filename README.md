@@ -1,6 +1,6 @@
-# **Rocket Picture Downloader** 
+# **Rocket Picture Downloader v1** 
 
-# **User Story** 
+## **User Story** 
 
 **As a** space enthusiast, 
 
@@ -8,7 +8,7 @@
 
 **So that** I can keep a curated collection of rocket  pictures on my local computer. 
 
-# **Workflow** 
+## **Workflow** 
 
 The application follows a simple sequential workflow to process and save the data: 
 
@@ -20,7 +20,7 @@ The application follows a simple sequential workflow to process and save the dat
 
 4. **Save Media** : Download and save the rocket pictures  directly into John's computer directories. 
 
-# **Acceptance Criteria** 
+## **Acceptance Criteria** 
 
 - The system must successfully connect to the Launch Library API to pull the next scheduled launches. 
 
@@ -30,3 +30,57 @@ The application follows a simple sequential workflow to process and save the dat
 
 - Downloaded images must be written properly to the local file system without corruption. 
 
+## **Roadmap** 
+
+```text
+v1 — Working script
+     │
+     ├── API request
+     ├── JSON parsing
+     └── Save images
+     │
+     ▼
+v2 — Improved Python script
+     │
+     ├── Error handling
+     ├── Logging
+     ├── Configuration
+     ├── Functions/modules
+     └── Better filesystem handling
+     │
+     ▼
+v3 — Automated testing
+     │
+     ├── pytest
+     ├── Mock API responses
+     ├── Test JSON parsing
+     ├── Test failures
+     └── Test image saving
+     │
+     ▼
+v4 — Pipeline structure
+     │
+     ├── Extract
+     ├── Transform
+     ├── Load
+     └── Configuration
+     │
+     ▼
+v5 — Airflow
+     │
+     ├── DAG
+     ├── API extraction task
+     ├── image processing task
+     ├── logging
+     ├── retries
+     └── scheduling
+     │
+     ▼
+v6 — DataOps/DevOps
+     │
+     ├── Docker
+     ├── CI tests
+     ├── Airflow
+     ├── environment variables/secrets
+     └── Jenkins/GitHub CI
+```
