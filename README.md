@@ -1,46 +1,55 @@
-# **Rocket Picture Downloader v1** 
+# **Rocket Picture Downloader - Phase 1** 
 
-## **User Story** 
+The script follows a simple sequential workflow to process and save data: 
 
-**As a** space enthusiast, 
+1. **Fetch Launch Data** : Retrieve the upcoming rocket launches from the Launch Library 2 (https://thespacedevs.com/llapi). 
 
-**I want to** automatically fetch upcoming rocket launch  schedules and download their corresponding images, 
+2. **Save Launch Schedule** : Store the retrieved launch information locally. 
 
-**So that** I can keep a curated collection of rocket  pictures on my local computer. 
+3. **Fetch Images** : Read the stored launch data to look up and request rocket pictures from the Internet. 
 
-## **Workflow** 
+4. **Save Media** : Download and save the rocket pictures directly into local computer directories. 
 
-The application follows a simple sequential workflow to process and save the data: 
 
-1. **Fetch Launch Data** : Retrieve the upcoming rocket launches  from the Launch Library. 
 
-2. **Save Launch Schedule** : Store the retrieved launch information  locally on John's computer. 
-
-3. **Fetch Images** : Read the stored launch data to look  up and request rocket pictures from the Internet. 
-
-4. **Save Media** : Download and save the rocket pictures  directly into John's computer directories. 
-
-## **Acceptance Criteria** 
-
-- The system must successfully connect to the Launch Library API to pull the next scheduled launches. 
-
-- The application must store the retrieved launch metadata locally in a structured folder format. 
-
-- The system must parse the saved metadata to extract image URLs and fetch media files via an internet connection. 
-
-- Downloaded images must be written properly to the local file system without corruption. 
+```text
+   CURRENT PROJECT
+         │
+         ▼
+┌─────────────────┐
+│ Launch Library  │
+│      API        │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Extract launch  │
+│      data       │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Parse image     │
+│      URLs       │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Download images │
+└─────────────────┘
+```
 
 ## **Roadmap** 
 
 ```text
-v1 — Working script
+☑ Phase 1 — Working script
      │
      ├── API request
      ├── JSON parsing
      └── Save images
      │
      ▼
-v2 — Improved Python script
+☐ Phase 2 — Improved Python script
      │
      ├── Error handling
      ├── Logging
@@ -49,7 +58,7 @@ v2 — Improved Python script
      └── Better filesystem handling
      │
      ▼
-v3 — Automated testing
+☐ Phase 3 — Automated testing
      │
      ├── pytest
      ├── Mock API responses
@@ -58,7 +67,7 @@ v3 — Automated testing
      └── Test image saving
      │
      ▼
-v4 — Pipeline structure
+☐ Phase 4 — Pipeline structure
      │
      ├── Extract
      ├── Transform
@@ -66,7 +75,7 @@ v4 — Pipeline structure
      └── Configuration
      │
      ▼
-v5 — Airflow
+☐ Phase 5 — Airflow
      │
      ├── DAG
      ├── API extraction task
@@ -76,7 +85,7 @@ v5 — Airflow
      └── scheduling
      │
      ▼
-v6 — DataOps/DevOps
+☐ Phase 6 — DataOps/DevOps
      │
      ├── Docker
      ├── CI tests
