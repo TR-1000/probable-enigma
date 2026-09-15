@@ -1,4 +1,4 @@
-# **Rocket Picture Downloader - Phase 2** 
+# **Rocket Picture Downloader** 
 
 The script follows a simple sequential workflow to process and save data: 
 
