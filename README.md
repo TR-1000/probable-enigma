@@ -1,4 +1,4 @@
-# **Rocket Picture Downloader - Phase 1** 
+# **Rocket Picture Downloader - Phase 2** 
 
 The script follows a simple sequential workflow to process and save data: 
 
@@ -49,7 +49,7 @@ The script follows a simple sequential workflow to process and save data:
      └── Save images
      │
      ▼
-☐ Phase 2 — Improved Python script
+☑ Phase 2 — Improved Python script
      │
      ├── Error handling
      ├── Logging
